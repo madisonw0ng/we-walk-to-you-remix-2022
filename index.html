@@ -37,9 +37,9 @@
     <div id="poem"></div>
     <script>
       // set up the lists of words
-      const subjects = "the mermaid,the salmon,the blue whale,".split(","),
-        verbs = "run,walk,speaks,cry, and,laughs,progress,fly,drifts,talks,moves,kisses,whispers".split(","),
-        objects = "the bay,the sea,the sand,the rocks,the gum the trees,the tides,the dirt,the velvet plains,the fields, ".split(",");
+      const subjects = "the mermaid,the salmon,the blue whale,the woman".split(","),
+        verbs = "runs,walks,speaks,cries,laughs,progress,wanders,flies,drifts,talks,moves,kisses,whispers".split(","),
+        objects = "the bay,the sea,the sand,the rocks,the gumtrees,the tides,the dirt,the velvet plains,the fields,the moon light, the sun".split(",");
       // set up the counter
       let counter = 0;
 
@@ -83,7 +83,7 @@
         counter++;
         if (counter % 5 === 0) {
           addBlankLine();
-        } else if (counter % 6 === 2 || counter % 6 === 4) {
+        } else if (counter % 6 === 3 || counter % 6 === 3) {
           // if the second or fourth line add the line with an indent
           addLine(true);
         } else {
